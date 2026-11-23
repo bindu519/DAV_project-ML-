@@ -171,16 +171,15 @@ The Streamlit application consists of five main sections.
 
 ---
 
-## 🎬 8. Application Demo
+## 🎬 Application Demo
 
 Watch the project demonstration to explore the working of the interactive Streamlit application.
 
 <p align="center">
-  <a href="YOUR_VIDEO_LINK">
-    <img src="https://img.shields.io/badge/▶_Watch_Application_Demo-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" />
+  <a href="https://drive.google.com/file/d/1mikN_TmD_Nr7DMvVsmqSO9UtpeEQo-a3/view?usp=drive_link">
+    <img src="https://img.shields.io/badge/▶_View_Application_Demo-FF4B4B?style=for-the-badge&logo=google-drive&logoColor=white" />
   </a>
 </p>
-
 **The demonstration covers:**
 
 - Project overview and dataset exploration.
