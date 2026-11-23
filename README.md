@@ -1,116 +1,87 @@
-# Sales Forecasting & Demand Prediction
-### Data Analytics and Visualization | Machine Learning Project
+# 📊 Sales Forecasting & Demand Prediction
 
-A data analytics and machine learning project developed using Python to analyze historical sales data, identify demand patterns, build predictive models, and visualize business insights.
+### 🚀 Data Analytics and Visualization | Machine Learning Project
 
-The project integrates **Data Preprocessing, Exploratory Data Analysis (EDA), Machine Learning, and Power BI** into an interactive web application developed using Streamlit.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Regression-orange" />
+  <img src="https://img.shields.io/badge/Streamlit-Web%20App-red?logo=streamlit" />
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-yellow?logo=powerbi" />
+</p>
+
+<p align="center">
+  <b>Transforming historical sales data into meaningful business insights and predictions.</b>
+</p>
 
 ---
 
-## 1. Project Overview
+## 📌 About The Project
 
-This project focuses on analyzing historical sales transactions and developing machine learning models for two prediction tasks:
+This project focuses on analyzing historical sales transactions, identifying demand patterns, and building machine learning models for sales and demand prediction.
 
-- **Sales Prediction:** Estimating sales based on product, region, month, units sold, and unit price.
-- **Demand Prediction:** Predicting the number of units sold using product, region, month, and day of the week.
+It combines **Data Preprocessing, Exploratory Data Analysis (EDA), Machine Learning, and Power BI Visualization** into an interactive web application developed using Streamlit.
 
-Two regression algorithms, Linear Regression and Random Forest Regressor, are implemented and evaluated for both tasks.
+## ✨ Project Highlights
 
-The project also includes an interactive Streamlit application for data exploration, model evaluation, and real-time user-input-based predictions.
-
-## 2. Key Features
-
-- Data loading and preprocessing
-- Data cleaning and feature engineering
-- Exploratory Data Analysis (EDA)
-- Sales and demand pattern analysis
-- Linear Regression implementation
-- Random Forest Regressor implementation
-- Model training and performance evaluation
-- Interactive prediction interface
-- Power BI dashboard integration
-- Automated model training and saving
-
-## 3. Dataset Description
-
-The project uses a sales dataset containing 12,000 records and 8 columns.
-
-| Dataset Attribute | Details |
+| 📍 Feature | 📊 Details |
 |---|---|
-| Total Records | 12,000 |
-| Total Columns | 8 |
-| Time Period | January 2023 – December 2025 |
+| Dataset | 12,000 records |
+| Time Period | 2023 – 2025 |
 | Products | 8 |
 | Categories | 3 |
 | Regions | 4 |
-| Missing Values | None |
-| Duplicate Records | None |
+| Prediction Tasks | 2 |
+| ML Algorithms | 2 |
 
-**Important Data Observations:**
+## 🎯 Project Objectives
 
-- Sales is calculated as Units Sold × Unit Price.
-- Every product has exactly one unit price.
-- November and December have higher average order quantities.
-- The number of orders per month is almost constant.
+- Analyze historical sales transactions.
+- Identify sales and demand patterns.
+- Perform data cleaning and preprocessing.
+- Build regression-based prediction models.
+- Evaluate and compare model performance.
+- Develop an interactive prediction application.
+- Visualize business insights using Power BI.
 
-## 4. Machine Learning Implementation
+## 🧠 Machine Learning Models
 
-Two prediction tasks are developed using the following algorithms:
+### 1️⃣ Sales Prediction
+- Target: `Sales`
+- Features: Product, Region, Month, Units Sold, Unit Price.
 
-**Algorithms Used:**
+### 2️⃣ Demand Prediction
+- Target: `Units_Sold`
+- Features: Product, Region, Month, Day of Week.
 
-1. Linear Regression
-2. Random Forest Regressor
+### 🤖 Algorithms Used
 
-### Task A – Sales Prediction
+- Linear Regression
+- Random Forest Regressor
 
-- **Target Variable:** Sales
-- **Input Features:** Product, Region, Month, Units Sold, Unit Price
-- **Objective:** Predict sales based on product and transaction information.
+### 📈 Evaluation Metrics
 
-This task demonstrates how machine learning models handle the relationship between units sold and unit price.
+- R² Score
+- Mean Absolute Error (MAE)
+- Root Mean Squared Error (RMSE)
+- 3-Fold Cross Validation
 
-### Task B – Demand Prediction
+**Model Configuration:** 80:20 train-test split | Random State: 42
 
-- **Target Variable:** Units Sold
-- **Input Features:** Product, Region, Month, Day of Week
-- **Objective:** Estimate product demand based on historical sales patterns.
+## 🛠️ Tech Stack
 
-This task focuses on understanding demand variations and seasonal patterns.
-
-### Model Evaluation
-
-The models are evaluated using:
-
-| Metric | Purpose |
+| Technology | Purpose |
 |---|---|
-| R² Score | Measures model performance |
-| MAE | Measures average absolute prediction error |
-| RMSE | Measures prediction error with greater penalty for large errors |
-| 3-Fold Cross Validation | Evaluates model consistency |
+| 🐍 Python | Programming |
+| 🐼 Pandas | Data preprocessing |
+| 🔢 NumPy | Numerical operations |
+| 📊 Matplotlib | Visualization |
+| 🎨 Seaborn | Statistical visualization |
+| 🤖 Scikit-learn | Machine Learning |
+| 🌐 Streamlit | Web application |
+| 📈 Power BI | Dashboard |
+| ☁️ Google Colab | Data cleaning |
 
-- Train-Test Split: 80:20
-- Random State: 42
-- Baseline: Predict-the-mean model
-
-Model evaluation scores are generated during execution rather than manually entered into the application.
-
-## 5. Technologies and Tools
-
-| Technology | Application |
-|---|---|
-| Python | Programming and data analysis |
-| Pandas | Data manipulation and preprocessing |
-| NumPy | Numerical computations |
-| Matplotlib | Data visualization |
-| Seaborn | Statistical visualization |
-| Scikit-learn | Machine learning and evaluation |
-| Streamlit | Interactive web application |
-| Power BI | Dashboard development |
-| Google Colab | Data cleaning and notebook execution |
-| Jupyter Notebook | Data analysis |
-
-## 6. Project Structure
+## 📂 Project Structure
 
 ```text
 DAV-ML-Project/
@@ -137,32 +108,7 @@ DAV-ML-Project/
     └── config.toml
 ```
 
-### Main Files
-
-| File | Description |
-|---|---|
-| `app.py` | Main Streamlit application with five sections |
-| `utils.py` | Data loading, cleaning, feature engineering, and insights |
-| `ml_pipeline.py` | Model definitions, training, evaluation, and prediction |
-| `train_models.py` | Script for training both machine learning models |
-| `requirements.txt` | Required Python libraries |
-| `data_cleaning_colab.ipynb` | Dataset cleaning and preprocessing notebook |
-| `assets/` | Power BI dashboard files |
-| `models/` | Saved trained machine learning models |
-
-## 7. Application Modules
-
-The Streamlit application contains five main sections:
-
-1. **Overview:** Introduction and project summary.
-2. **Data & Preprocessing:** Dataset information and cleaning operations.
-3. **EDA:** Exploratory analysis and data visualizations.
-4. **ML Models:** Model training, evaluation, and comparison.
-5. **Prediction:** Interactive sales and demand prediction.
-
-## 8. Installation and Execution
-
-Follow these steps to run the project locally.
+## ⚙️ Installation & Setup
 
 **Step 1: Clone the repository**
 
@@ -170,89 +116,63 @@ Follow these steps to run the project locally.
 git clone YOUR_REPOSITORY_URL
 ```
 
-**Step 2: Navigate to the project directory**
+**Step 2: Navigate to the project folder**
 
 ```bash
 cd dav_ml
 ```
 
-**Step 3: Create a virtual environment**
-
-For Windows:
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-For Mac/Linux:
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-**Step 4: Install dependencies**
+**Step 3: Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**Step 5: Train the models (Optional)**
+**Step 4: Train models (Optional)**
 
 ```bash
 python train_models.py
 ```
 
-The application automatically trains the models during its first run if previously saved models are unavailable.
-
-**Step 6: Launch the application**
+**Step 5: Run the application**
 
 ```bash
 python -m streamlit run app.py
 ```
 
-The application will be available at:
+🌐 The application opens at `http://localhost:8501`.
 
-`http://localhost:8501`
+## 🖥️ Application Demo
 
-## 9. Important Technical Considerations
+🎬 **Watch the application demonstration:** [Add Your Video Link Here]
 
-- **Sales Calculation:** Sales is directly calculated from Units Sold × Unit Price.
-- **Demand Prediction:** Sales and unit price are excluded from demand prediction to avoid data leakage.
-- **Outlier Handling:** Genuine high-value sales transactions are retained rather than capped.
-- **Year Feature:** Year is excluded because the dataset contains only three years of historical information.
-- **Model Performance:** Demand prediction performance is limited by the available dataset features and the relatively simple seasonal pattern.
-- **Dashboard Interpretation:** The forecasted sales trend donut represents historical monthly sales distribution, not an independent future forecast. Actual predictions are generated through the Streamlit application.
+## 📊 Power BI Dashboard
 
-## 10. Learning Outcomes
+📈 The Power BI dashboard presents sales trends, regional performance, and other business insights.
 
-Through this project, the following concepts were implemented and explored:
+📷 **Dashboard Preview:** See the dashboard files in the `assets/` folder.
 
-- Data cleaning and preprocessing techniques.
-- Exploratory Data Analysis and visualization.
-- Feature engineering and regression analysis.
-- Implementation of Linear Regression and Random Forest.
-- Model evaluation using regression metrics.
-- Understanding data leakage and model limitations.
-- Development of interactive applications using Streamlit.
-- Integration of analytical results with Power BI dashboards.
+## 💡 Important Insights
 
-## 11. Future Enhancements
+- Sales is calculated as Units Sold × Unit Price.
+- November and December have higher average order quantities.
+- Monthly order counts remain almost constant.
+- Sales prediction is relatively straightforward because sales is directly related to units and price.
+- Demand prediction is more challenging because the dataset contains limited explanatory features.
 
-- Incorporating additional business-related features into the dataset.
-- Exploring more machine learning algorithms.
-- Improving demand prediction through additional relevant features.
-- Enhancing interactive visualizations and analytical capabilities.
+## 🎓 Learning Outcomes
 
----
+- Data cleaning and preprocessing.
+- Exploratory Data Analysis.
+- Feature engineering.
+- Regression algorithms.
+- Model evaluation and comparison.
+- Interactive application development.
+- Business data visualization.
 
-### Project Information
+## 🔮 Future Enhancements
 
-**Project Title:** Sales Forecasting & Demand Prediction  
-**Domain:** Data Analytics and Machine Learning  
-**Project Type:** Data Analytics and Visualization (DAV) Mini Project  
-**Programming Language:** Python  
-**Application Framework:** Streamlit
-
-*Developed as part of the Data Analytics and Visualization academic mini project.*
+- Incorporate additional business-related features.
+- Explore more machine learning algorithms.
+- Improve demand prediction using richer datasets.
+- Enhance
